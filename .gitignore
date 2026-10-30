@@ -1,0 +1,38 @@
+# Python and notebook temporary files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Local datasets and model artifacts (kept out of GitHub)
+IMS/
+Dataset/
+Dataset_uncapped/
+train_FD*.txt
+test_FD*.txt
+RUL_FD*.txt
+processed_train_uncapped.csv
+*.keras
+*.pkl
+
+# Generated data from archived notebook locations
+notebooks/uncapped/results/
+
+# Presentation and reference documents are postponed as requested
+docs/
+*.docx
+*.pdf
+*.xlsx
+readme.txt
+
+# macOS archive metadata
+__MACOSX/
+# Duplicate archival copy (the dashboard uses the root results file)
+/results/uncapped/
